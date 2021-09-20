@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap Css Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+     <!--Font awaesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!--Index js file -->
+    <title>BookList App</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="display-4 text-center mt-4"><i class="fas fa-shopping-cart text-warning"></i>My<span class="text-warning">Shop</span>List</h1>
+    <form id="form-info">
+      <div class="form-group">
+        <label for="product">Product</label>
+        <input type="text" id="product" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="price">Price</label>
+        <input type="text" id="price" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity</label>
+        <input type="text" id="quantity" class="form-control">
+      </div>
+      <input type="submit" value="Add Shop" id="add" class="btn btn-warning btn-block">
+    </form>    
+     <table class="table table-striped table-hover mt-5">
+         <thead class="table-warning">
+             <th>Produc</th>
+             <th>Price</th>
+             <th>Quantity</th>
+             <th>Total</th>
+             <th></th>
+         </thead>
+         <tbody id="list">
+
+         </tbody>
+         <tfoot class="bg-light">
+           <td>Net Total</td>
+           <td></td>
+           <td></td>
+           <td id="amount"></td>
+           <td></td>
+         </tfoot>
+     </table>
+</div>
+
+
+
+<!--Jquery Bootstrap-->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<!--Popper Js-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<!--Bootstrap Js-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+<script src="index.js"></script>
+</body>
+</html>
